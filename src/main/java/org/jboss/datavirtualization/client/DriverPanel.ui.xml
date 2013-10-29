@@ -1,0 +1,30 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" 
+  xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:datavirt="urn:import:org.jboss.datavirtualization.client">
+  <ui:with field='res' type='org.jboss.datavirtualization.client.Resources' />
+  <g:HTMLPanel>
+    <table align="left" style="background-color:#fdfbfb;padding:0px 0px 0px 0px;">
+       <tr>
+         <!-- Driver Table -->
+         <td>
+           <table align="left" style="padding:0px 0px 0px 0px;">
+               <tr><td class='{res.style.titleMedium}'>Drivers</td></tr>
+               <tr><td><g:ScrollPanel ui:field="driversTableScrollPanel" /></td></tr>
+           </table>
+         </td>
+          
+         <!-- Driver Buttons -->
+         <td style="vertical-align:top">
+           <table align="left" >
+              <tr><td style="height:25px"></td></tr>
+              <tr><td style="padding:0px 0px 10px 0px;"><g:Button ui:field="deleteDriverButton" text="Delete" /></td></tr> 
+              <!-- VDB Upload Panel -->
+              <tr><td style="vertical-align:top;horizonal-align:left;padding:0px 0px 0px 0px;"><datavirt:FileUploadPanel ui:field="driverUploadPanel" /></td></tr>
+           </table>
+         </td>
+            
+       </tr>
+    </table>
+
+  </g:HTMLPanel>
+</ui:UiBinder>

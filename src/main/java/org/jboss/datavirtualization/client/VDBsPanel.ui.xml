@@ -1,0 +1,76 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" 
+  xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:datavirt="urn:import:org.jboss.datavirtualization.client">
+  <ui:with field='res' type='org.jboss.datavirtualization.client.Resources' />
+  <g:HTMLPanel>
+    <table style="background-color:#fdfbfb;padding:0px 0px 0px 0px;width:100%;height:100%;">
+    <tr><td style="vertical-align:top; horizontal-align:left;">
+
+    <table style="background-color:#fdfbfb;width:100%;height:100%width:100%;vertical-align:top;horizontal-align:left;">
+
+      <!-- Panel Title and Description -->
+      <tr><td class='{res.style.titleMedium}'>Manage Virtual Databases</td></tr>
+      <tr><td class='{res.style.titleSmallItalics}'>Manage Dynamic VDBs</td></tr>
+
+      <!-- VDB Selection and Controls -->
+      <tr>
+        <td>
+          <table align="left">
+            <tr>
+              <td class='{res.style.titleMedium}'>VDB: </td>
+              <td><g:ListBox ui:field="vdbSelectionListBox" styleName='{res.style.vdbListBox}' /></td>
+              <td style="width:10em" />
+              <td><g:Button ui:field="newVDBButton" text="New..." /></td>
+              <td><g:Button ui:field="deleteVDBButton" text="Delete" /></td>
+              <td><g:Button ui:field="showVDBXmlButton" text="Show XML" /></td>
+              <td><g:Button ui:field="deploySampleButton" text="Deploy 'SampleVDB'" /></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- VDB Label and status -->
+      <tr>
+        <td>
+          <table align="left" style="padding:0px 0px 0px 0px;">
+            <tr>
+              <td class='{res.style.titleMedium}'><g:Label ui:field="vdbStatusTitleLabel" /></td>
+              <td class='{res.style.titleMedium}'><g:Label ui:field="vdbStatusLabel" /></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      
+      <!-- VDB Buttons and Table -->
+      <tr><td>
+          <table align="left">
+            <tr>
+              <!-- VDB Buttons -->
+              <td style="vertical-align:top">
+                <table align="left">
+                  <tr><td style="height:25px"></td></tr>
+                  <tr><td><g:Button styleName='{res.style.vdbButton}' text="Add Source..." ui:field="addSourceModelButton" /></td></tr>
+                  <tr><td><g:Button styleName='{res.style.vdbButton}' text="Add View..." ui:field="addViewModelButton" /></td></tr>
+                  <tr><td><g:Button styleName='{res.style.vdbButton}' text="Edit..." ui:field="editModelButton" /></td></tr>
+                  <tr><td><g:Button styleName='{res.style.vdbButton}' text="Remove" ui:field="removeModelButton" /></td></tr>
+                </table>
+              </td>
+              <!-- VDB Table -->
+              <td>
+                <table align="left" style="padding:0px 0px 0px 0px;">
+                  <tr><td class='{res.style.titleMedium}'>VDB Models</td></tr>
+                  <tr><td><g:ScrollPanel ui:field="vdbModelsScrollPanel" /></td></tr>
+                </table>
+              </td>
+              <!-- VDB Upload Panel -->
+              <td style="vertical-align:top;horizonal-align:left;padding:0px 0px 0px 20px;"><datavirt:FileUploadPanel ui:field="vdbUploadPanel" /></td>
+            </tr>
+          </table>
+      </td></tr>
+    </table>
+    
+    </td><td><g:Label ui:field="dummyLabel" /></td></tr>
+    </table>
+
+  </g:HTMLPanel>
+</ui:UiBinder> 

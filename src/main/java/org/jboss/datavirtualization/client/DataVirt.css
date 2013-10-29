@@ -1,0 +1,445 @@
+/** Add css rules here for your application. */
+
+
+html, body
+{
+  height: 100%;
+}
+
+@external .gwt-TabLayoutPanel .gwt-TabLayoutPanelTabs {background: none !important;} 
+
+.myTabBar {
+  background-color: #2d343a;
+}
+
+.loginPanel {
+  width:100%;
+  height:100%;
+  background-color: #1D2226;
+  background-image: url("./images/login-screen-background.jpg");
+  background-position: top left;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.loginPanelLogo {
+  position: absolute;
+  top: 50px;
+  right: 64px;
+}
+
+.loginPanelForm {
+  position: absolute;
+  bottom: 15%;
+  padding-left: 100px;
+  width: 100%;
+  min-width: 850px;
+  border-top: 1px rgba(255, 255, 255, 0.05) solid;
+  border-bottom: 1px rgba(255, 255, 255, 0.05) solid;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.applicationTitle {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #fdfbfb;
+  text-align: left;
+  padding: 0px 0px 0px 15px
+}
+
+.titleLarge {
+  font-size: 1.75em;
+  font-weight: bold;
+  color: #505459;
+  text-align: left;
+}
+
+.titleMedium {
+	color: #505459;
+	font-size: 1.45em;
+	font-weight: bold;
+	text-align: left;
+}
+
+.titleSmall {
+  font-size: 1.20em;
+  font-weight: bold;
+  color: #505459;
+  text-align: left;
+}
+
+.titleSmallItalics {
+  font-size: 1.20em;
+  font-weight: bold;
+  font-style:italic;
+  color: #505459;
+  text-align: left;
+}
+
+.labelText {
+  font-size: 1.25em;
+  vertical-align:center;
+}
+
+.labelTextItalics {
+  font-size: 1.25em;
+  font-style:italic;
+}
+
+.labelTextItalicsRed {
+  font-size: 1.25em;
+  font-style:italic;
+  color: red;
+}
+
+.labelTextBold {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.loginLabel {
+  color: #fdfbfb;
+  padding:5px 0px 0px 100px;  
+  font-size: 1.25em;
+  font-style:bold;
+}
+
+.loginStatus {
+  color: #fdfbfb;
+  padding:5px 0px 0px 100px;  
+  font-size: 1.25em;
+  font-style:italic;
+}
+
+.topPadding20 {
+  padding: 20px 0px 0px 0px
+}
+
+.bottomPadding10 {
+  padding: 0px 0px 10px 0px
+}
+
+.rightPadding5 {
+  padding: 0px 5px 0px 0px
+}
+
+.leftPadding15 {
+  padding: 0px 0px 0px 15px
+}
+
+.dialogButton {
+  width:65px;
+  height:25px;
+} 
+
+.paddingBottom10Left20 {
+  padding: 0px 0px 10px 20px
+}
+
+.paddingBannerImage {
+  padding: 10px 0px 10px 10px
+}
+
+.paddingTabPanel {
+  padding: 0px 0px 0px 10px
+}
+
+.vdbStatusActive {
+  background-color: green;
+  color: white;
+}
+
+.vdbStatusInactive {
+  background-color: red;
+  color: white;
+}
+
+.queryPanelLoadStatusLabel {
+  color: red;
+  font-style:italic;
+  font-weight: bold;
+}
+
+/******************************************************/
+/***************** DialogPanel sizing *****************/
+/******************************************************/
+.messageDialogPanel {
+  width: 200x;
+  height: 200x;
+  margin: 5px;
+}
+
+.messageDialogErrorMessage {
+  color: red;
+}
+
+.messageDialogMessage {
+  color: black;
+}
+
+.addEditModelDialogPanel {
+  width: 450x;
+  height: 200x;
+  margin: 5px;
+}
+
+.createEditDataSourceDialogPanel {
+  width: 450x;
+  height: 200x;
+  margin: 5px;
+}
+
+.createVdbDialogPanel {
+  width: 450x;
+  height: 200x;
+  margin: 5px;
+}
+
+.deleteVdbDialogPanel {
+  width: 200x;
+  height: 200x;
+  margin: 5px;
+}
+
+.copySourceDialogPanel {
+  width: 200x;
+  height: 200x;
+  margin: 5px;
+}
+
+.deleteSourceDialogPanel {
+  width: 200x;
+  height: 200x;
+  margin: 5px;
+}
+
+.deleteDriverDialogPanel {
+  width: 200x;
+  height: 200x;
+  margin: 5px;
+}
+
+.deploySampleSourcesDialogPanel {
+  width: 200x;
+  height: 200x;
+  margin: 5px;
+}
+
+.deploySampleVdbDialogPanel {
+  width: 200x;
+  height: 200x;
+  margin: 5px;
+}
+
+.removeModelsDialogPanel {
+  width: 200x;
+  height: 200x;
+  margin: 5px;
+}
+
+.showVdbXmlDialogPanel {
+  width: 200x;
+  height: 200x;
+  margin: 5px;
+}
+
+.sqlXmlDialogPanel {
+  width: 400x;
+  height: 200x;
+  margin: 5px;
+}
+
+.appLoginDialogPanel {
+  width: 400x;
+  height: 200x;
+  margin: 5px;
+}
+
+/******************************************************/
+/****************** Drivers Table *********************/
+/******************************************************/
+.driversTable {
+  border: 1px solid silver;
+  padding: 2px;
+  margin-bottom:6px;
+}
+
+.driversTableCell {
+  font-size: 1.00em;
+}
+
+.driversTableHeader {
+  background-color: #666666;
+  font-weight: bold;
+  color: white;
+}
+
+.driversTableEvenRow {
+  background-color: #CCCCCC;
+  color: black;
+}
+
+.driversTableOddRow {
+  background-color: #FFFFFF;
+  color: black;
+}
+
+.driverButton {
+  width:80px;
+  height:30px;
+} 
+
+.uploadPanel {
+    background-color: #CCCCCC;
+}
+
+/******************************************************/
+/****************** DataSources Table *****************/
+/******************************************************/
+.dataSourcesTable {
+  border: 1px solid silver;
+  padding: 2px;
+  margin-bottom:6px;
+}
+
+.dataSourcesTableCell {
+  font-size: 1.00em;
+}
+
+.dataSourcesTableHeader {
+  background-color: #666666;
+  font-weight: bold;
+  color: white;
+}
+
+.dataSourcesTableEvenRow {
+  background-color: #CCCCCC;
+  color: black;
+}
+
+.dataSourcesTableOddRow {
+  background-color: #FFFFFF;
+  color: black;
+}
+
+.dataSourceButton {
+  width:80px;
+  height:35px;
+} 
+
+/******************************************************/
+/******* DataSources Properties Table *****************/
+/******************************************************/
+.dataSourcePropertiesTable {
+  border: 1px solid silver;
+  padding: 2px 2px 10px 2px;
+  margin-bottom:6px;
+}
+
+.dataSourcePropertiesTableCell {
+  font-size: 1.00em;
+  color: black;
+}
+
+.dataSourcePropertiesTableCellItalics {
+  font-size: 1.00em;
+  color: black;
+  font-style:italic;
+}
+
+.dataSourcePropertiesTableCellUnmodifiable {
+  background-color: #CCCCCC;
+  color: black;
+}
+
+.dataSourcePropertiesTableHeader {
+  background-color: #666666;
+  font-weight: bold;
+  color: white;
+}
+
+.dataSourcePropertiesTableEvenRow {
+  background-color: #CCCCCC;
+  font-weight: bold;
+  color: black;
+}
+
+.dataSourcePropertiesTableOddRow {
+  background-color: #FFFFFF;
+  font-weight: bold;
+  color: black;
+}
+
+/******************************************************/
+/****************** VDBModels Table *******************/
+/******************************************************/
+.vdbListBox {
+  width: 200px;
+  font-size: 1.25em;
+  font-weight: bold;
+} 
+
+.vdbModelsTable {
+  border: 1px solid silver;
+  padding: 2px;
+  margin-bottom:6px;
+}
+
+/* VDB and DataSources Table Cell */
+.vdbModelsTableCell {
+  font-size: 1.00em;
+}
+
+.vdbModelsTableHeader {
+  background-color: #666666;
+  font-weight: bold;
+  color: white;
+}
+
+.vdbModelsTableEvenRow {
+  background-color: #CCCCCC;
+  color: black;
+}
+
+.vdbModelsTableOddRow {
+  background-color: #FFFFFF;
+  color: black;
+}
+
+.vdbButton {
+  width:120px;
+  height:30px;
+} 
+
+/******************************************************/
+/***************** SQLResults Table *******************/
+/******************************************************/
+
+.sqlResultsPanelTitle {
+  font-size: 1.875em;
+  font-weight: bold;
+  color: #505459;
+  text-align: left;
+}
+
+.sqlResultsTable {
+  border: 1px solid silver;
+  padding: 2px;
+  margin-bottom:6px;
+}
+
+.sqlResultsTableHeader {
+  background-color: #666666;
+  color: white;
+}
+
+.sqlResultsTableEvenRow {
+  background-color: #CCCCCC;
+  color: black;
+}
+
+.sqlResultsTableOddRow {
+  background-color: #FFFFFF;
+  color: black;
+}
